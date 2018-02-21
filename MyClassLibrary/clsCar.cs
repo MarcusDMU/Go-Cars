@@ -9,6 +9,7 @@ namespace MyClassLibrary
         }
 
         public string Car { get; set; }
+        public int CarNo { get; set; }
         public int RegNo { get; set; }
 
         public bool Valid(string SomeModel)
