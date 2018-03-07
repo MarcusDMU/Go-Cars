@@ -4,6 +4,7 @@ namespace MyClassLibrary
 {
     public class clsCustomer
     {
+        public string Customer { get; set; }
         public int CustomerNo { get; set; }
         public string Email { get; set; }
 

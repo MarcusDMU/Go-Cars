@@ -43,6 +43,9 @@
     <Compile Include="clsCar.cs" />
     <Compile Include="clsCarCollection.cs" />
     <Compile Include="clsCustomer.cs" />
+    <Compile Include="..\..\clsCustomerCollection.cs">
+      <Link>clsCustomerCollection.cs</Link>
+    </Compile>
     <Compile Include="clsStaff.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
