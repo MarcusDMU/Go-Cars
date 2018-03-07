@@ -60,6 +60,7 @@
       <Link>tstCustomerCollection.cs</Link>
     </Compile>
     <Compile Include="tstStaff.cs" />
+    <Compile Include="tstStaffCollection.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyClassLibrary\MyClassLibrary.csproj">

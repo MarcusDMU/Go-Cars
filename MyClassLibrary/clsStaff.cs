@@ -4,6 +4,7 @@ namespace MyClassLibrary
 {
     public class clsStaff
     {
+        public string Staff { get; set; }
         public int StaffID { get; set; }
         public string Surname { get; set; }
 
