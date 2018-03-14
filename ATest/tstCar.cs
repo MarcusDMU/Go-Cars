@@ -30,12 +30,107 @@ namespace ATest
         }
 
         [TestMethod]
-        public void RegNoExist()
+        public void RegNoPropertyOK()
         {
+            //create an instance of the class we want to create
             clsCar ACar = new clsCar();
-            Int32 RegNo = 123;
-            ACar.RegNo = RegNo;
-            Assert.AreEqual(ACar.RegNo, RegNo);
+            //create some test data to assign to the property
+            Int32 TestData = 123;
+            //assign the data to the property
+            ACar.RegNo = TestData;
+            //test to see tha the two values are the same
+            Assert.AreEqual(ACar.RegNo, TestData);
+        }
+
+        [TestMethod]
+        public void ManufacturerPropertyOK()
+        {
+            //create an instance of the class we want to create
+            clsCar ACar = new clsCar();
+            //create some test data to assign to the property
+            string TestData = "Ford";
+            //assign the data to the property
+            ACar.Manufacturer = TestData;
+            //test to see tha the two values are the same
+            Assert.AreEqual(ACar.Manufacturer, TestData);
+        }
+
+        [TestMethod]
+        public void SeatsPropertyOK()
+        {
+            //create an instance of the class we want to create
+            clsCar ACar = new clsCar();
+            //create some test data to assign to the property
+            Int32 TestData = 5;
+            //assign the data to the property
+            ACar.Seats = TestData;
+            //test to see tha the two values are the same
+            Assert.AreEqual(ACar.Seats, TestData);
+        }
+
+        [TestMethod]
+        public void YearPropertyOK()
+        {
+            //create an instance of the class we want to create
+            clsCar ACar = new clsCar();
+            //create some test data to assign to the property
+            Int32 TestData = 2015;
+            //assign the data to the property
+            ACar.Year = TestData;
+            //test to see tha the two values are the same
+            Assert.AreEqual(ACar.Year, TestData);
+        }
+
+        [TestMethod]
+        public void DoorsPropertyOK()
+        {
+            //create an instance of the class we want to create
+            clsCar ACar = new clsCar();
+            //create some test data to assign to the property
+            Int32 TestData = 5;
+            //assign the data to the property
+            ACar.Doors = TestData;
+            //test to see tha the two values are the same
+            Assert.AreEqual(ACar.Doors, TestData);
+        }
+
+        [TestMethod]
+        public void EngineSizePropertyOK()
+        {
+            //create an instance of the class we want to create
+            clsCar ACar = new clsCar();
+            //create some test data to assign to the property
+            decimal TestData = 1.4m;
+            //assign the data to the property
+            ACar.EngineSize = TestData;
+            //test to see tha the two values are the same
+            Assert.AreEqual(ACar.EngineSize, TestData);
+        }
+
+        [TestMethod]
+        public void FuelTypePropertyOK()
+        {
+            //create an instance of the class we want to create
+            clsCar ACar = new clsCar();
+            //create some test data to assign to the property
+            string TestData = "Petrol";
+            //assign the data to the property
+            ACar.FuelType = TestData;
+            //test to see tha the two values are the same
+            Assert.AreEqual(ACar.FuelType, TestData);
+        }
+
+        [TestMethod]
+        public void GearBoxPropertyOK()
+        {
+            //create an instance of the class we want to create
+            clsCar ACar = new clsCar();
+            //create some test data to assign to the property
+            string TestData = "Manual";
+            //assign the data to the property
+            ACar.GearBox = TestData;
+            //test to see tha the two values are the same
+            Assert.AreEqual(ACar.GearBox, TestData);
         }
 
         [TestMethod]
@@ -173,6 +268,21 @@ namespace ATest
             OK = ACar.Valid(SomeModel);
             //test to see that the result is correct
             Assert.IsFalse(OK);
+        }
+
+        [TestMethod]
+        public void FindMethodOK()
+        {
+            //create an instance of the class we want to create
+            clsCar ACar = new clsCar();
+            //boolean variable to store the result of the validation
+            Boolean Found = false;
+            //create some test data to use with the method
+            Int32 RegNo = 1234;
+            //invoke the method
+            Found = ACar.Find(RegNo);
+            //test to see that the result is correct
+            Assert.IsTrue(Found);
         }
 
     }

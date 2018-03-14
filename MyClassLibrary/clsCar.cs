@@ -10,7 +10,20 @@ namespace MyClassLibrary
 
         public string Car { get; set; }
         public int CarNo { get; set; }
+        public int Doors { get; set; }
+        public decimal EngineSize { get; set; }
+        public string FuelType { get; set; }
+        public string GearBox { get; set; }
+        public string Manufacturer { get; set; }
         public int RegNo { get; set; }
+        public int Seats { get; set; }
+        public int Year { get; set; }
+
+        public bool Find(int RegNo)
+        {
+            //always return true
+            return true;
+        }
 
         public bool Valid(string SomeModel)
         {
