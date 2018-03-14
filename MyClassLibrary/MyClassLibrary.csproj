@@ -46,6 +46,7 @@
     <Compile Include="..\..\clsCustomerCollection.cs">
       <Link>clsCustomerCollection.cs</Link>
     </Compile>
+    <Compile Include="clsDataConnection.cs" />
     <Compile Include="clsStaff.cs" />
     <Compile Include="clsStaffCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
