@@ -4,9 +4,19 @@ namespace MyClassLibrary
 {
     public class clsStaff
     {
+        public int AddressNo { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public string Email { get; set; }
+        public string Forename { get; set; }
         public string Staff { get; set; }
         public int StaffID { get; set; }
         public string Surname { get; set; }
+        public long TelephoneNo { get; set; }
+        public bool Find(int StaffID)
+        {
+            //always return true
+            return true;
+        }
 
         public bool Valid(string SomeSurname)
         {
