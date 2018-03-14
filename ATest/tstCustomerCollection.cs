@@ -81,7 +81,7 @@ namespace ATest
             //create an instance of the class
             clsCustomerCollection AllCustomers = new clsCustomerCollection();
             //create test data
-            Int32 SomeCount = 0;
+            Int32 SomeCount = 2;
             //assign data property
             AllCustomers.Count = SomeCount;
             //Test

@@ -56,9 +56,7 @@
     <Compile Include="tstCar.cs" />
     <Compile Include="tstCarCollection.cs" />
     <Compile Include="tstCustomer.cs" />
-    <Compile Include="H:\Documents\tstCustomerCollection.cs">
-      <Link>tstCustomerCollection.cs</Link>
-    </Compile>
+    <Compile Include="tstCustomerCollection.cs" />
     <Compile Include="tstStaff.cs" />
     <Compile Include="tstStaffCollection.cs" />
   </ItemGroup>

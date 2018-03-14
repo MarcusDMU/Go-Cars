@@ -43,9 +43,7 @@
     <Compile Include="clsCar.cs" />
     <Compile Include="clsCarCollection.cs" />
     <Compile Include="clsCustomer.cs" />
-    <Compile Include="..\..\clsCustomerCollection.cs">
-      <Link>clsCustomerCollection.cs</Link>
-    </Compile>
+    <Compile Include="clsCustomerCollection.cs" />
     <Compile Include="clsDataConnection.cs" />
     <Compile Include="clsStaff.cs" />
     <Compile Include="clsStaffCollection.cs" />
